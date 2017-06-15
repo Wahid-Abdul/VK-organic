@@ -1,0 +1,16 @@
+.circle {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 2px solid red;
+}
+
+.bg {
+    background-image: url(https://static.pexels.com/photos/17679/pexels-photo.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid green;
+}
