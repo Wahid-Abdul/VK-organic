@@ -25,6 +25,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -34,7 +35,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: transparent">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: transparent;">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -47,37 +48,42 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse" style="color:white">
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
                     <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
+                        <a class="page-scroll outline" href="#page-top">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll outline" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#products">Products</a>
+                        <a class="page-scroll outline" href="#products">Products</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#faqs">FAQs</a>
+                        <a class="page-scroll outline" href="#faqs">FAQs</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll outline" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+
         </div>
-        <!-- /.container -->
+
     </nav>
 
     <!-- Intro Section -->
-    <section id="page-top" class="intro-section" style="height:100%;border:2px solid red">
+    <section id="page-top" class="intro-section " style="border:2px solid yellow;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;">
 
-        <div class="bg">
+        <!--<div class="bg">
 
-        </div>
+        </div>-->
 
     </section>
 
@@ -94,20 +100,20 @@
 
     <!-- products Section -->
     <section id="products" class="contact-section ">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row ">
-                <div class=" col-lg-4 col-md-4 col-sm-4">
-                    <div class="circle">
+                <div class=" col-lg-4 col-md-4 col-sm-4" style="padding:10px 0 10px 0;">
+                    <div class="circle" style="margin:0 auto;">
                         AA
                     </div>
                 </div>
-                <div class=" col-lg-4 col-md-4 col-sm-4">
-                    <div class="circle">
+                <div class=" col-lg-4 col-md-4 col-sm-4" style="padding:10px 0 10px 0;">
+                    <div class="circle" style="margin:0 auto;">
                         dsad
                     </div>
                 </div>
-                <div class="col-lg-4  col-md-4 col-sm-4">
-                    <div class="circle">
+                <div class="col-lg-4  col-md-4 col-sm-4" style="padding:10px 0 10px 0;">
+                    <div class="circle" style="margin:0 auto;">
                         asdsa
                     </div>
                 </div>
@@ -121,6 +127,7 @@
             <div class="row ">
                 <div class="col-lg-12 ">
                     <h1>Frequently asked questions</h1>
+                    <p>glow</p>
                 </div>
             </div>
         </div>
@@ -131,7 +138,7 @@
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 ">
-                    <h1>Contact Section</h1>
+                    <h1 class="glow">Contact Section</h1>
                 </div>
             </div>
         </div>

@@ -1,16 +1,27 @@
 .circle {
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    border: 2px solid red;
+    height: 30vw;
+    width: 30vw;
+    border: 2px solid blue;
 }
 
 .bg {
-    background-image: url(https://static.pexels.com/photos/17679/pexels-photo.jpg);
+    background-image: url('../../images/apple.jpeg');
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 2px solid green;
+    border: 2px solid blue;
+}
+
+.outline {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    color: white
+}
+
+.outline:hover {
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 3em;
 }
