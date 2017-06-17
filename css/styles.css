@@ -46,3 +46,9 @@
 body {
     font-family: 'Lobster';
 }
+
+.mynav {
+    background-color: black;
+    filter: blur(0px);
+    opacity: 0.3;
+}
