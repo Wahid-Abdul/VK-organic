@@ -36,7 +36,7 @@
 
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: transparent;">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: transparent">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -45,7 +45,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                <a class="navbar-brand  page-scroll" href="#page-top" style="text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    color: white">VK organic farms</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,21 +77,24 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="page-top" class="intro-section " style="border:2px solid yellow;   
+    <section id="page-top" class="intro-section " style="border:2px solid yellow;background-image: url(../../images/apple.jpg);
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;">
+    background-position: center;" class="row">
+        <div class="col-lg-2">
 
-        <!--<div class="bg">
+        </div>
+        <div style="margin:0 auto;border:2px solid green;vertical-align:center;text-align: center" class="col-lg-10 ">
+            <h1 style="font-size: 5em;color:yellow;">Welocme to the world of VK organic farms</h1>
 
-        </div>-->
+        </div>
 
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section ">
+    <section id="about" class="about-section " style="background-color: ">
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-12 ">
@@ -103,20 +108,23 @@
     <section id="products" class="contact-section ">
         <div class="container-fluid">
             <div class="row ">
-                <div class=" col-lg-4 col-md-4 col-sm-4" style="padding:10px 0 10px 0;">
-                    <div class="circle" style="margin:0 auto;">
-                        AA
+                <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
+                    <div class="circle" style="margin:0 auto;background-image: url(../images/apple.jpg);background-size: cover;background-position: center">
+
                     </div>
+                    milk 1 litre
                 </div>
-                <div class=" col-lg-4 col-md-4 col-sm-4" style="padding:10px 0 10px 0;">
-                    <div class="circle" style="margin:0 auto;">
-                        dsad
+                <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
+                    <div class="circle" style="margin:0 auto;background-image: url(../images/beach.jpg);background-size: cover;background-position: center">
+
                     </div>
+                    milk 2 litres
                 </div>
-                <div class="col-lg-4  col-md-4 col-sm-4" style="padding:10px 0 10px 0;">
-                    <div class="circle" style="margin:0 auto;">
-                        asdsa
+                <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
+                    <div class="circle" style="margin:0 auto;background-image: url(../images/apple.jpg);background-size: cover;background-position: center">
+
                     </div>
+                    bla bla
                 </div>
             </div>
         </div>
@@ -146,13 +154,37 @@
     </section>
 
 
+    <a id="back-to-top" href="#" class="back-to-top" role="button">
+        <img src="../images/up.png" alt="up" style="height: 5vh;width:5vh;"> </span>
+    </a>
 
     <!-- jQuery -->
     <script src="js/jquery.js "></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function() {
+                $('#back-to-top').tooltip('hide');
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
 
+            $('#back-to-top').tooltip('show');
+
+        });
+    </script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js "></script>
-
+    <script src="js/scripts.js "></script>
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js "></script>
     <script src="js/scrolling-nav.js "></script>
