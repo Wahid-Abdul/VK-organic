@@ -17,7 +17,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -77,7 +77,7 @@
     </nav>
 
     <!-- Intro Section -->
-    <section id="page-top" class="intro-section " style="border:2px solid yellow;background-image: url(../../images/apple.jpg);
+    <section id="page-top" class="intro-section " style="border:2px solid yellow;background-image: url(../../images/beach.jpg);
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@
     </section>
 
     <!-- products Section -->
-    <section id="products" class="contact-section ">
+    <section id="products" class="contact-section " style="border:20px solid red">
         <div class="container-fluid">
             <div class="row ">
                 <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
@@ -148,14 +148,17 @@
             <div class="row ">
                 <div class="col-lg-12 ">
                     <h1 class="glow">Contact Section</h1>
+                    <div id="map">
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <a id="back-to-top" href="#" class="back-to-top" role="button">
-        <img src="../images/up.png" alt="up" style="height: 5vh;width:5vh;"> </span>
+    <a id="back-to-top" href="#" class="back-to-top bounce" role="button">
+        <img src="../images/up.png" alt="up" style="height: 5vh;width:5vh;" class="bounce"> </span>
     </a>
 
     <!-- jQuery -->
@@ -182,9 +185,28 @@
 
         });
     </script>
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: -25.363,
+                lng: 131.044
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js "></script>
-    <script src="js/scripts.js "></script>
+    <!--<script src="js/scripts.js "></script>-->
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js "></script>
     <script src="js/scrolling-nav.js "></script>
