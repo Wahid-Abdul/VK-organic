@@ -5418,10 +5418,17 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-nav>.active>a,
+
+/*found ya*/
+
+
+/*ON FOCUS*/
+
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #555;
-    background-color: #e7e7e7;
+    color: blue;
+    /*background-color: yellow;*/
+    /*opacity: 0.5;*/
 }
 
 .navbar-default .navbar-nav>.disabled>a,

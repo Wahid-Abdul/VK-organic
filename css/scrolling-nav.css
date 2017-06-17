@@ -43,6 +43,7 @@ of those sections to manage the look and feel of the site. */
     padding-top: 150px;
     text-align: center;
     background: #eee;
+    overflow: auto;
 }
 
 .services-section {
@@ -54,7 +55,6 @@ of those sections to manage the look and feel of the site. */
 
 .contact-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
+    padding-top: 10vh text-align: center;
     background: #eee;
 }
