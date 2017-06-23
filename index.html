@@ -26,6 +26,7 @@
         view_video.php?viewkey=ph5853116c8de79
     <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Mogra|Crushed" rel="stylesheet">
+    <link rel="shortcut icon" href="">
 
 </head>
 
@@ -115,18 +116,20 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section " style="background-color:deeppink ">
+    <section id="about" class="about-section " style="background-color:rgb(183,255,155)">
         <div class="container ">
             <div class="row ">
-                <div class="col-lg-12 outer">
-
-
-                    <div class="inner" style="border:2px solid blue">
-                        <div id="map" class=" ">
-                            dwfe
-                        </div>
-
+                <div class="col-lg-12 ">
+                    <div style="" class="aboutus">
+                        About Us<br/><br/>
                     </div>
+                    <br>
+                    <p style="font-size: 2em;word-spacing: 4px;text-align:justify;"> We bring raw milk straight from our indigenous breed of cows to your house just as our healthy cows give us and then into hygienic bottles,seal them and deliver at your doorstep. This is unlike the processed pasteurised milk that many
+                        consume today.Our milk has no added <span style="color:purple;">colors</span> or chemicals and is neither dilated just as pure as mother 's milk
+                    </p>
+
+
+
                 </div>
             </div>
         </div>
@@ -173,11 +176,15 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section " style="border:2px dotted brown">
         <div class="row ">
-            <div class="col-lg-12" style="border:2px solid black">
-                dsbjchd
-            </div>
-            <div class="col-lg-12" style="border:2px solid aqua">
-                sdkndkj
+            <div class="col-lg-12 outer" style="background-color:seashell ">
+
+
+                <div class="inner" style="border:2px solid blue">
+                    <div id="map" class=" ">
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -193,21 +200,21 @@
         $(document).ready(function() {
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 50) {
-                    $('#back-to-top').fadeIn();
+                    $('#back-to-top ').fadeIn();
                 } else {
-                    $('#back-to-top').fadeOut();
+                    $('#back-to-top ').fadeOut();
                 }
             });
             // scroll body to 0px on click
-            $('#back-to-top').click(function() {
-                $('#back-to-top').tooltip('hide');
-                $('body,html').animate({
+            $('#back-to-top ').click(function() {
+                $('#back-to-top ').tooltip('hide ');
+                $('body,html ').animate({
                     scrollTop: 0
                 }, 800);
                 return false;
             });
 
-            $('#back-to-top').tooltip('show');
+            $('#back-to-top ').tooltip('show ');
 
         });
     </script>
@@ -217,7 +224,7 @@
                 lat: 13.2984920,
                 lng: 80.1484450
             };
-            var map = new google.maps.Map(document.getElementById('map'), {
+            var map = new google.maps.Map(document.getElementById('map '), {
                 zoom: 10,
                 center: uluru
             });

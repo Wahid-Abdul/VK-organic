@@ -49,7 +49,7 @@
     bottom: 50%;
     height: 300px;
     width: 300px;
-    z-index: 2
+    z-index: 2;
 }
 
 #map {
@@ -60,5 +60,11 @@
 }
 
 body {
-    font-family: 'Crushed', cursive;
+    font-family: 'Crushed';
+}
+
+.aboutus {
+    height: 8%;
+    font-size: 3em;
+    text-decoration: underline
 }
