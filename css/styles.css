@@ -5,6 +5,10 @@
     border: 2px solid blue;
 }
 
+.circle:hover {
+    transform: scale(1.1);
+}
+
 .bg {
     background-image: url('../../images/apple.jpeg');
     height: 100%;
@@ -66,5 +70,11 @@ body {
 .aboutus {
     height: 8%;
     font-size: 3em;
-    text-decoration: underline
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px white, 0 0 25px blue, 0 0 5px green;
+    text-align: center
+}
+
+.aboutus:hover {
+    text-shadow: 2px 2px 2px yellow, 0 0 25px blue, 0 0 5px white;
 }
