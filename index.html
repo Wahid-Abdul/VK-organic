@@ -124,7 +124,7 @@
                         <span class="aboutus"> About Us</span><br/><br/>
                     </div>
                     <br>
-                    <p style="font-size: 2em;word-spacing: 4px;text-align:justify;"> We bring raw milk straight from our indigenous breed of cows to your house just as our healthy cows give us and then into hygienic bottles,seal them and deliver at your doorstep. This is unlike the processed pasteurised milk that many
+                    <p style="font-size: 3em;word-spacing: 4px;text-align:justify;"> We bring raw milk straight from our indigenous breed of cows to your house just as our healthy cows give us and then into hygienic bottles,seal them and deliver at your doorstep. This is unlike the processed pasteurised milk that many
                         consume today.Our milk has no added <span style="color:purple;">colors</span> or chemicals and is neither dilated just as pure as mother 's milk
                     </p>
 
@@ -137,31 +137,31 @@
 
     <!-- products Section -->
     <section id="products" class="products-section " style="border:20px solid red;">
-        <div class="container-fluid">
-            <div class="row ">
-                <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
-
+        <!--<div class="container-fluid">-->
+        <div class="row " style="border:2px solid blue;margin:0 auto" id="mid">
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
+                <div class="">
                     <div class="circle" style="margin:0 auto;background-image: url(../images/apple.jpg);background-size: cover;background-position: center">
 
                     </div>
-
-                    milk 1 litre
                 </div>
-                <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;height:initial">
-                    <div class="circle" style="margin:0 auto;background-image: url(../images/beach.jpg);background-size: cover;background-position: center">
+                milk 1 litre
+            </div>
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;height:initial">
+                <div class="circle" style="margin:0 auto;background-image: url(../images/beach.jpg);background-size: cover;background-position: center">
 
-                    </div>
-                    milk 2 litres
                 </div>
+                milk 2 litres
+            </div>
 
-                <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
-                    <div class="circle" style="margin:0 auto;background-image: url(../images/apple.jpg);background-size: cover;background-position: center">
+            <div class="col-lg-4  col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 0px 0;">
+                <div class="circle" style="margin:0 auto;background-image: url(../images/apple.jpg);background-size: cover;background-position: center">
 
-                    </div>
-                    bla bla
                 </div>
+                bla bla
             </div>
         </div>
+        <!--</div>-->
     </section>
 
     <!--FAQs section-->
@@ -178,16 +178,16 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section " style="border:2px dotted brown">
-        <div class="row ">
-            <div class="col-lg-12 outer" style="background-color:seashell ">
+        <div class=" row " style="border:2px solid black;height: 100%">
+            <div class="col-lg-6" style="border:2px solid red;height: 100%">
 
 
-                <div class="inner" style="border:2px solid blue">
-                    <div id="map" class=" ">
 
-                    </div>
+                <div id="map" class=" " style="border:2px solid yellow">
 
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -218,7 +218,9 @@
             });
 
             $('#back-to-top ').tooltip('show ');
-
+            var par = $('#mid').parent().height();
+            var cur = $('#mid').height();
+            $('#mid').css("margin-top", (par - cur) / 2);
         });
     </script>
     <script>
@@ -237,7 +239,7 @@
             });
         }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFiHRQt6AQL2MjII2VfI9mn7ArlDRiJl4&callback=initMap ">
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBFiHRQt6AQL2MjII2VfI9mn7ArlDRiJl4&sensor=true"></script>
     </script>
 
     <!-- Bootstrap Core JavaScript -->
