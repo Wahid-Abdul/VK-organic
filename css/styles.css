@@ -5,17 +5,49 @@
     border: 2px solid blue;
 }
 
-.zoom-in {
-    border-radius: 50%;
-    height: 30vw;
-    width: 30vw;
+.circle1 {
+    -webkit-transition: transform 1.05s ease-out;
+    -moz-transition: transform 1.05s ease-out;
+    -ms-transition: transform 1.05s ease-out;
 }
 
-.circle:hover {
-    transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
+.circle2 {
+    -webkit-transition: transform 1.05s ease-out;
+    -moz-transition: transform 1.05s ease-out;
+    -ms-transition: transform 1.05s ease-out;
+}
+
+.circle3 {
+    -webkit-transition: transform 1.05s ease-out;
+    -moz-transition: transform 1.05s ease-out;
+    -ms-transition: transform 1.05s ease-out;
+}
+
+.circle1:hover {
+    transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    -webkit-transform: scale(0.7);
+}
+
+.circle2:hover {
+    transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -webkit-transition: transform 0.75s ease-in-out;
+    -moz-transition: transform 0.75s ease-in-out;
+    -ms-transition: transform 0.75s ease-in-out;
+}
+
+.circle3:hover {
+    transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -webkit-transition: transform 1.05s ease-in-out;
+    -moz-transition: transform 1.05s ease-in-out;
+    -ms-transition: transform 1.05s ease-in-out;
 }
 
 .bg {
@@ -69,7 +101,7 @@
     width: 100%;
     height: 100%;
     /*margin: 0 auto;*/
-    background-color: grey;
+    /*background-color: grey;*/
 }
 
 body {
