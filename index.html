@@ -25,9 +25,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         view_video.php?viewkey=ph5853116c8de79
     <![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Mogra|Crushed" rel="stylesheet">
     <link rel="shortcut icon" href="">
-
+    <link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
 </head>
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -124,7 +123,7 @@
                         <span class="aboutus"> About Us</span><br/><br/>
                     </div>
                     <br>
-                    <p style="font-size: 3em;word-spacing: 4px;text-align:justify;"> We bring raw milk straight from our indigenous breed of cows to your house just as our healthy cows give us and then into hygienic bottles,seal them and deliver at your doorstep. This is unlike the processed pasteurised milk that many
+                    <p style="font-size: 4vh;word-spacing: 4px;text-align:justify;"> We bring raw milk straight from our indigenous breed of cows to your house just as our healthy cows give us and then into hygienic bottles,seal them and deliver at your doorstep. This is unlike the processed pasteurised milk that many
                         consume today.Our milk has no added <span style="color:purple;">colors</span> or chemicals and is neither dilated just as pure as mother 's milk
                     </p>
 
@@ -136,7 +135,7 @@
     </section>
 
     <!-- products Section -->
-    <section id="products" class="products-section " style="border:20px solid red;">
+    <section id="products" class="products-section " style="border:20px solid red;overflow:scroll;">
         <!--<div class="container-fluid">-->
         <div class="row " style="border:2px solid blue;margin:0 auto" id="mid">
             <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12" style="padding:10px 0 10px 0;">
@@ -165,12 +164,26 @@
     </section>
 
     <!--FAQs section-->
-    <section id="faqs" class="contact-section " style="border:2px solid blue ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-lg-12 ">
-                    <h1>Frequently asked questions</h1>
-                    <p>glow</p>
+    <section id="faqs" class="contact-section " style="border:2px solid blue;overflow: scroll ">
+        <div class="container " style="border:2px solid brown;height: 100%;width:100%">
+            <div class="row " style="border:2px solid black;height: 100%;width:100%">
+                <div class="col-lg-12" style="border: 2px solid red;height: 100%;width:100%">
+                    <dl style="height: 100%;width:100%">
+                        <dt>What is Lorem Ipsum?</dt>
+                        <dd>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dum </dd>
+
+                        <dt>Would you like to learn more?</dt>
+                        <dd>Yada Yada Such and Such</dd>
+
+                        <dt>Would you like to learn more?</dt>
+                        <dd>Yada Yada Such and Such</dd>
+
+                        <dt>Would you like to learn more?</dt>
+                        <dd>Yada Yada Such and Such</dd>
+
+                        <dt>Would you like to learn more?</dt>
+                        <dd>Yada Yada Such and Such</dd>
+                    </dl>
                 </div>
             </div>
         </div>
@@ -226,13 +239,26 @@
         });
     </script>
     <script>
+        (function() {
+
+            $('dd').filter(':nth-child(n+4)').hide();
+
+            $('dl').on("mouseenter", 'dt', function() {
+                $(this)
+                    .next()
+                    .slideDown(300)
+                    .siblings('dd')
+                    .slideUp(300);
+            });
+        })();
+
         function initMap() {
             var uluru = {
                 lat: 13.2984920,
                 lng: 80.1484450
             };
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 10,
+                zoom: 4,
                 center: uluru
             });
             var marker = new google.maps.Marker({

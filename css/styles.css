@@ -45,9 +45,9 @@
     -ms-transform: scale(0.95);
     -moz-transform: scale(0.95);
     -webkit-transform: scale(0.95);
-    -webkit-transition: transform 1.05s ease-in-out;
-    -moz-transition: transform 1.05s ease-in-out;
-    -ms-transition: transform 1.05s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
 }
 
 .bg {
@@ -105,7 +105,7 @@
 }
 
 body {
-    font-family: 'Crushed';
+    font-family: 'Athiti', sans-serif;
 }
 
 .aboutus {
@@ -118,4 +118,40 @@ body {
 
 .aboutus:hover {
     text-shadow: 2px 2px 2px yellow, 0 0 25px blue, 0 0 5px white;
+}
+
+dl {
+    background: #f3e3c2;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+dl,
+dt,
+dd {
+    border-radius: 5px;
+}
+
+dt {
+    /*background: #08071c;*/
+    /*border-bottom: 1px solid #040412;*/
+    border-top: 1px solid #262395;
+    /*color: #137de9;*/
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 2em;
+    /*text-shadow: -1px -1px 0px #1169c3;*/
+}
+
+dt:first-child {
+    border-top: 0;
+}
+
+dt:last-of-type {
+    border-bottom: 0;
+}
+
+dd {
+    margin-left: 0;
+    padding: 1em 0;
 }
