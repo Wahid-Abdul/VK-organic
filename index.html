@@ -193,17 +193,21 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section " style="border:2px dotted brown">
+    <section id="contact" class="contact-section">
         <div class="row" style="border:2px solid black;height: 100%">
-            <div class="col-lg-6" style="border:2px solid red;height: 100%">
+            <div class="col-lg-6" style="height: 100%">
 
 
 
-                <div id="map" style="border:2px solid yellow">
+                <div id="map" style="border:2px dashed brown;height: 50%;width: 100%">
                     <!--<iframe src="//www.google.com/maps/embed/v1/place?q=Harrods,Brompton%20Rd,%20UK&zoom=17&key=AIzaSyD73pIeOFYFTmVeN_XO9gLnXnSFzL403Fc">
   </iframe>-->
 
                 </div>
+                <div style="height: 50%;border:2px dashed blue;width:100%">
+
+                </div>
+
 
 
             </div>
@@ -217,9 +221,9 @@
                     <br>
                     <input class="form-control input-lg" type="number" placeholder="Your phone number *optional">
                     <br>
-                    <textarea class="form-control input-lg " rows="10" placeholder="Your content here" required></textarea>
+                    <textarea class="form-control input-lg " rows="11" placeholder="Your content here" required></textarea>
                     <br>
-                    <input type="submit" class="submits  btn" value="Submit" style="border-radius: 18px;border-color: rgba(0,100,0,0.3)">
+                    <input type="submit" class="submits  btn" value="Submit" style="border-radius: 18px;border-color: rgba(0,100,0,0.3);outline: 0">
                 </form>
             </div>
         </div>
@@ -276,7 +280,7 @@
                 lng: 80.1484450
             };
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 4,
+                zoom: 14,
                 center: uluru
             });
             var marker = new google.maps.Marker({
@@ -285,7 +289,7 @@
             });
         }
     </script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyD73pIeOFYFTmVeN_XO9gLnXnSFzL403Fc&sensor=true&callback=initialize"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEDgmqyJjEOr5mjGgO96MbaxGwhuhr3K0&callback=initMap">
     </script>
 
     <!-- Bootstrap Core JavaScript -->
