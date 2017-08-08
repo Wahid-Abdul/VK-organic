@@ -88,7 +88,8 @@ textarea {
     margin: 0 auto;
     width: 90%;
     height: 90%;
-    border-radius: 30px;
+    border-radius: 10px;
+    outline: none
     /* border: 2px solid black; */
     /*margin: 0 auto;*/
     /*background-color: grey;*/

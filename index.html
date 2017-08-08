@@ -256,6 +256,7 @@
     <!-- jQuery -->
     <script src="js/jquery.js "></script>
     <script>
+        document.getElementsByTagName('body').style.display = none;
         $(document).ready(function() {
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 50) {
@@ -299,9 +300,11 @@
                 lng: 80.1484450
             };
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: uluru
+                zoom: 12,
+                center: uluru,
+                mapTypeId: 'terrain'
             });
+            map.setTilt(45);
             var marker = new google.maps.Marker({
                 position: uluru,
                 map: map
