@@ -16,27 +16,6 @@ textarea {
     overflow: inherit;
 }
 
-.outer-circle {}
-
-.circle {
-    border-radius: 50%;
-    height: 30vw;
-    width: 30vw;
-    -webkit-transition: transform 1s ease-out;
-    -moz-transition: transform 1s ease-out;
-    -ms-transition: transform 1s ease-out;
-}
-
-.circle:hover {
-    transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    -webkit-transform: scale(0.9);
-    -webkit-transition: transform 0.5s ease-in;
-    -moz-transition: transform 0.5s ease-in;
-    -ms-transition: transform 0.5s ease-in;
-}
-
 .bg {
     background-image: url('../../images/apple.jpeg');
     height: 100%;
@@ -159,3 +138,6 @@ dd {
     margin-left: 0;
     padding: 1em 0;
 }
+
+
+/* fro faqs */
