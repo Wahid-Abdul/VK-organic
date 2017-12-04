@@ -363,12 +363,42 @@
                 </form>
             </div>-->
 
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color:bisque;height: 100%">
 
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color: aqua;height: 100%">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="height: 100%">
                 <div id="map" style="height:70%;width: 79%;margin:15vh auto;">
 
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" style="height: 100%">
+                <div style="height:70%;width: 79%;margin:15vh auto;">
+                    <div style="border:0px solid blue;height:29%;width:100%">
+                        <div class="row" style="height: 100%;width: 100%">
+
+                        </div>
+
+                    </div>
+                    <div style="border:0px solid blue;height:14%;width:100%">
+                        <button class="loginBtn loginBtn--google" style="height: 100%;width:100%;text-align:center">
+                            Login with Google
+                          </button>
+
+                    </div>
+                    <div style="border:0px solid blue;height:14%;width:100%">
+                        <button class="loginBtn loginBtn--facebook" style="height: 100%;width:100%;text-align:center">
+                            Connect with Facebook
+                          </button>
+
+                    </div>
+
+                    <div style="border:0px solid blue;height:14%;width:100%">
+                        <button class="loginBtn loginBtn--facebook" style="height: 100%;width:100%;text-align:center">
+                            Login with Facebook
+                          </button>
+
+                    </div>
+                    <div style="border:0px solid blue;height:29%;width:100%">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -432,7 +462,8 @@
             map.setTilt(45);
             var marker = new google.maps.Marker({
                 position: uluru,
-                map: map
+                map: map,
+                label: 'VK-organic farms'
             });
         }
     </script>
