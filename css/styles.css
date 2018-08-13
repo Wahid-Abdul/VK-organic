@@ -85,18 +85,19 @@ textarea {
 
 body {
     font-family: 'Athiti', sans-serif;
+    overflow-x: hidden
 }
 
 .aboutus {
     height: 8%;
     font-size: 3em;
     text-decoration: underline;
-    text-shadow: 1px 1px 1px white, 0 0 25px blue, 0 0 5px green;
+    /* text-shadow: 1px 1px 1px white, 0 0 25px blue, 0 0 5px green; */
     text-align: center
 }
 
 .aboutus:hover {
-    text-shadow: 2px 2px 2px yellow, 0 0 25px blue, 0 0 5px white;
+    /* text-shadow: 2px 2px 2px yellow, 0 0 25px blue, 0 0 5px white; */
 }
 
 dl {
@@ -217,4 +218,87 @@ dd {
 .loginBtn--google:hover,
 .loginBtn--google:focus {
     background: #E74B37;
+}
+
+.blue-border {
+    /* border: 1px solid blue; */
+    height: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.red-border {
+    /* border: 1px solid red; */
+    height: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.green-border {
+    /* border: 1px solid green; */
+    height: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.prod-parent .prod-image {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    background: url(../images/bottle2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.prod-parent .prod-text {
+    background-color: yellow;
+    display: none
+}
+
+.prod-parent:hover .prod-text {
+    position: absolute;
+    display: unset;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 0em;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    background-color: rgba(29, 26, 25, 0.7);
+    color: white;
+    padding: 6em 1.5em 1.5em;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 5%;
+    transition: all 3s ease 3s;
+}
+
+.prod-parent2 .prod-image2 {
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    background: url(../images/bottle2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.prod-parent2 .prod-text2 {
+    background-color: yellow;
+    display: none
+}
+
+.prod-parent2:hover .prod-text2 {
+    position: absolute;
+    display: unset;
+    top: 0em;
+    right: 0em;
+    bottom: 0em;
+    left: 0em;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    background-color: rgba(29, 26, 25, 0.7);
+    color: white;
+    padding: 6em 1.5em 1.5em;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 5%;
 }

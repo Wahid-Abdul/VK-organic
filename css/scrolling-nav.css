@@ -51,11 +51,10 @@ of those sections to manage the look and feel of the site. */
 }
 
 .products-section {
-    min-height: 100vh;
+    min-height: 90vh;
     padding-top: 50px;
     text-align: center;
     background: #fff;
-    /*font-size: 3em;*/
 }
 
 .contact-section {
