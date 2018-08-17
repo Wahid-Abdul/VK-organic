@@ -242,7 +242,7 @@ dd {
     height: 100%;
     width: 100%;
     background: url(../images/bottle2.jpg);
-    background-size: contain;
+    background-size: 30vh;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -267,7 +267,7 @@ dd {
     padding: 6em 1.5em 1.5em;
     overflow: hidden;
     margin: auto;
-    border-radius: 5%;
+    border-radius: 20px;
     transition: all 3s ease 3s;
 }
 
@@ -276,7 +276,7 @@ dd {
     height: 100%;
     width: 100%;
     background: url(../images/ghee1.png);
-    background-size: contain;
+    background-size: 30vh;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -301,7 +301,7 @@ dd {
     padding: 6em 1.5em 1.5em;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 .row {
